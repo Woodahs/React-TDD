@@ -1,0 +1,86 @@
+:root {
+  --color-primary: #17bebb;
+  --color-secondary: #ef5d60;
+  --color-secondary__dark: #a13f40;
+  --color-text: #ffffff;
+  --color-text__inverted: #003554;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../../../public/dojo.svg') center center / contain no-repeat;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  font: 16px/22px Dosis, sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  padding: 100px;
+  flex-direction: column;
+}
+
+/*
+ Counter
+ */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+section span, section h1 {
+  font-size: 1.7em;
+}
+
+section h1 {
+  font-weight: 400;
+}
+
+section span {
+  margin: 0 1em;
+  font-weight: 600;
+}
+
+/*
+ Connection status
+ */
+p {
+  background: #ffffff;
+  border-radius: 2em;
+  color: var(--color-text__inverted);
+  font-size: 1.3em;
+  padding: 1em;
+  text-align: center;
+}
+
+/*
+ Connect button
+ */
+button {
+  display: block;
+  width: 100%;
+  padding: 0.8em 1.4em;
+  border-radius: 40px;
+  background: var(--color-secondary);
+  border: 1px solid transparent;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
+button:hover {
+  background: var(--color-secondary__dark);
+}

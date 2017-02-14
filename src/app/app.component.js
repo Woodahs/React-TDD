@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './styles/main.css';
 
 export class AppComponent extends Component {
   render() {
     return (
-      <div>
+      <main>
         Hello World
-      </div>
+      </main>
     );
   }
 }
