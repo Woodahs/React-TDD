@@ -1,3 +1,7 @@
+# Workshop by The Software House on React + TDD
+
+During workshop we have worked in groups of 3, here is what we came up with during the workshop
+
 # React Ninja Frontend App
 
 A simple project to teach how to become a React Ninja using TDD approach.

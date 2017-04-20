@@ -4,12 +4,13 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 
 import appReducer from './app/app.reducer';
+import socketMiddleware from './app/middleware/socket.middleware';
 import { AppComponent } from './app/app.component';
 
 const store = createStore(
   appReducer,
   compose(
-    applyMiddleware(/* HERE YOU CAN ADD YOUR MIDDLEWARE's */),
+    applyMiddleware(socketMiddleware),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )
 );
